@@ -1,0 +1,22 @@
+.tips-section{
+  margin-top: 1.5rem;
+}
+.plans-section{
+  margin-top: 1.5rem;
+}
+.plan-title{
+  color: green;
+  font-weight: 900 !important;
+  font-size: 28px;
+  text-align: center;
+}
+.section-testimonials{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.testimonials-title{
+  text-align: center;
+}
+.section-footer{
+  margin-top: 1.5rem;
+}
