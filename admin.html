@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" />
+    <meta name="description"
+        content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI." />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Premium betting tips~ Punters world. High Odds Tips for punters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="root">
+    <header>
+        <!--Sidebar Menu-->
+        <div class="ui vertical inverted sidebar menu">
+            <a class="active item">Home</a> <a class="item">Premium Tips</a>
+            <a class="item">Contact-us</a> <a class="item">Careers</a>
+            <a class="item">Login</a><a class="item">Subscribe</a>
+        </div>
+        <div class="ui inverted vertical masthead center aligned segment">
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item"><i class="sidebar icon"></i></a>
+                    <a class="active item">Home</a> <a class="item">Premium Tips</a>
+                    <a class="item">Contact-us</a>
+                    <div class="right item">
+                        <a class="ui inverted button">Log in</a>
+                        <a class="ui inverted button">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="tips-section">
+            <div class="ui container">
+                <div class="ui one column doubling stackable grid container">
+                    <div class="column">
+                        <h2>Premium Tips</h2>
+                        <table class="ui unstackable celled table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Game</th>
+                                    <th>Tip</th>
+                                    <th>Odds</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="date">03-03-2022</td>
+                                    <td data-label="Game">Manchester Utd vs Arsenal</td>
+                                    <td data-label="Tip">Over 3.5</td>
+                                    <td data-label="odds">1.34</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="date">03-03-2022</td>
+                                    <td data-label="Game">Manchester Utd vs Arsenal</td>
+                                    <td data-label="Tip">Over 3.5</td>
+                                    <td data-label="odds">1.54</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="date">03-03-2022</td>
+                                    <td data-label="Game">Manchester Utd vs Arsenal</td>
+                                    <td data-label="Tip">Over 3.5</td>
+                                    <td data-label="odds">1.34</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="date"></td>
+                                    <td data-label="Game"></td>
+                                    <td data-label="Tip"><b>Total Odds</b></td>
+                                    <td data-label="odds"><b>5.34</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tips-section">
+            <div class="ui success message container">
+                <div class="header">Than You.</div>
+                <p>Thank you for being a valued member. We strive everyday to give you the best experience. Thank you.</p>
+                <a class="ui positive button">Contact Us</a>
+            </div>
+        </section>
+        <section class="section-footer">
+            <div class="ui inverted vertical footer segment">
+                <div class="ui container">
+                    <div class="ui stackable inverted divided equal height stackable grid">
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">About</h4>
+                            <div class="ui inverted link list">
+                                <a class="item" href="#root">Premium Bets</a>
+                                <a class="item" href="/contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="three wide column">
+                            <h4 class="ui inverted header">Services</h4>
+                            <div class="ui inverted link list">
+                                <a class="item" href="#">Bet analysis</a>
+                                <a class="item" href="#">Premium Subscriptions</a>
+                                <a class="item" href="#">Free betting tips</a>
+                            </div>
+                        </div>
+                        <div class="seven wide column">
+                            <h4 class="ui inverted header">Premium Subscriptions</h4>
+                            <p class="footer-text">
+                                Subscribe to our premium plans for a full betting experience. Get accurate analyzed tips
+                                with suitable odds.
+                            </p>
+                            <p class="footer-text">Copyright &copy;2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // fix menu when passed
+            $(".masthead").visibility({
+                once: false,
+                onBottomPassed: function () {
+                    $(".fixed.menu").transition("fade in");
+                },
+                onBottomPassedReverse: function () {
+                    $(".fixed.menu").transition("fade out");
+                }
+            });
+
+            // create sidebar and attach to menu open
+            $(".ui.sidebar").sidebar("attach events", ".toc.item");
+        });
+    </script>
+</body>
+
+</html>
